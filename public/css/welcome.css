@@ -1,0 +1,75 @@
+/* Estilo general del contenedor para asegurar un diseño fluido */
+.container {
+    padding: 0 15px; /* Asegura que el contenido no esté pegado a los bordes */
+}
+
+/* Estilo para el botón de regresar con ícono */
+.btn-light {
+    font-size: 1.5rem;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa00; /* Color de fondo blanco */
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    position: absolute; /* Posición absoluta dentro del contenedor relativo */
+    z-index: 10; /* Asegura que el botón esté encima de otros elementos */
+}
+
+/* Estilo para el ícono dentro del botón */
+.btn-light .bi-arrow-left {
+    font-size: 2rem; /* Tamaño del ícono */
+    color: #ffffff; /* Color del ícono, azul primario */
+}
+
+/* Estilo para la tarjeta */
+.card {
+    border-radius: 0.5rem; /* Bordes redondeados */
+    position: relative; /* Asegura que el botón de regresar se posicione relativo a la tarjeta */
+}
+
+/* Estilo para la imagen dentro de la tarjeta */
+.card-img-top {
+    border-radius: 0.5rem 0.5rem 0 0; /* Bordes redondeados en la parte superior de la imagen */
+}
+
+/* Ajustes específicos para la imagen */
+.card-img-top {
+    object-fit: cover; /* Asegura que la imagen se ajuste correctamente sin distorsión */
+    height: 100%; /* Permite que la imagen ocupe toda la altura del contenedor */
+    max-height: 500px; /* Limita la altura máxima de la imagen */
+}
+
+/* Estilo para la información de la tarjeta */
+.card-body {
+    padding: 1.25rem; /* Espaciado interno */
+}
+
+/* Títulos y texto */
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d; /* Color del texto */
+}
+
+.text-primary {
+    color: #007bff; /* Color azul primario */
+}
+
+.text-muted {
+    color: #6c757d; /* Color gris claro para el texto */
+}
+
+/* Estilo para la separación entre secciones */
+hr {
+    border: 0;
+    border-top: 1px solid #e9ecef; /* Línea sutil de separación */
+    margin: 1.5rem 0;
+}

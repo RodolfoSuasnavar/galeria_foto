@@ -1,0 +1,136 @@
+    /* Estilos para las secciones */
+    .section {
+        padding: 4rem 0;
+    }
+
+    .section-heading {
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .carousel-text-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 60vh;
+        background-image: url('{{ asset("img/img-3.jpg") }}');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        color: white;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    /* Texto */
+
+      body {
+        font-family: 'Roboto', sans-serif; /* Para el texto principal */
+    }
+
+    h1, h2, h3, .navbar-brand {
+        font-family: 'Montserrat', sans-serif; /* Para los encabezados */
+    }
+
+      .carousel-text-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(129, 120, 120, 0.5);
+        z-index: 1;
+    }
+
+    .text-section {
+        flex: 1;
+        position: relative;
+        z-index: 2;
+        margin-right: 20px;
+        max-width: 50%;
+        padding-left: 20px;
+    }
+
+    .overlay h1 {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #fafafa;
+        margin-bottom: 10px;
+    }
+
+    .overlay p {
+        font-size: 1.5rem;
+        color: #fafafa;
+    }
+
+    .carousel {
+        flex: 1;
+        max-width: 40%;
+        position: relative;
+        z-index: 2;
+    }
+
+    .carousel-img {
+        height: 300px;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+    .navbar, .footer {
+        background-color: #ffffff;
+        box-shadow: 0 4px 2px -2px gray;
+        padding: 1rem;
+    }
+
+    .footer {
+        color: #333;
+    }
+
+    .footer a {
+        color: #333;
+    }
+
+    @media (max-width: 768px) {
+        .carousel-text-container {
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        .text-section {
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .carousel {
+            max-width: 100%;
+        }
+
+        .carousel-img {
+            height: 200px;
+        }
+    }
+
+    .imgs {
+        width: 400px; /* La imagen ocupa el ancho completo de su contenedor */
+        height: auto; /* La imagen ocupa la altura completa de su contenedor */
+        object-fit: cover; /* La imagen se ajusta sin distorsionarse, puede recortarse */
+        border-radius: 8px; /* Esquinas redondeadas opcionales */
+        object-fit: cover;
+        margin: 10px; /* Este es el margen*/
+        }
+        .imgsa {
+        width: 600px; /*La imagen ocupa el ancho completo de su contenedor*/
+        /* height: auto; La imagen ocupa la altura completa de su contenedor */
+        /* object-fit: cover; La imagen se ajusta sin distorsionarse, puede recortarse */
+        border-radius: 8px; /* Esquinas redondeadas opcionales*/
+        /* object-fit: cover; */
+        margin: 5px; /* Este es el margen*/
+        }
+        .image-section {
+            height: auto; /* Ajusta la altura automática para pantallas pequeñas */
+            border-radius: 0;
+        }

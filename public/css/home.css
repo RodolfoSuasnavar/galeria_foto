@@ -1,0 +1,47 @@
+/* Estilo para las imágenes en las tarjetas */
+.card-img-top {
+    object-fit: cover;
+    height: 200px; /* Ajusta la altura según tu preferencia */
+}
+
+/* Estilo para la tarjeta */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Ajustes para la vista en móviles */
+@media (max-width: 768px) {
+    .card-img-top {
+        height: 150px; /* Ajusta la altura para pantallas más pequeñas */
+    }
+}
+.footer {
+    background-color: #001f3f;  /* Color del fondo para que coincida con el navbar */
+    color: white;               /* Texto en color blanco */
+  }
+
+  .footer a {
+    color: white;               /* Enlaces de redes sociales en blanco */
+    text-decoration: none;      /* Sin subrayado */
+  }
+
+  .footer i {
+    font-size: 20px;            /* Tamaño de los íconos */
+  }
+
+  .footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .footer p {
+    margin-bottom: 0;           /* Quitar márgenes inferiores de los párrafos */
+  }
+
+  .py-4 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
+  /* Navbar y Carrusel */
